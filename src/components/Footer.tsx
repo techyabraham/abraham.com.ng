@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { styles } from "@/lib/styles";
+import { socialProfiles } from "@/lib/data";
 
 const footerLinks = [
   { href: "/about", label: "About" },
@@ -21,6 +23,19 @@ export default function Footer() {
           <p className="mt-2 text-sm text-slate-400">
             Product developer. Growth strategist. Author. Speaker.
           </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {socialProfiles.map((profile) => (
+              <a
+                key={profile.label}
+                href={profile.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.tag}
+              >
+                {profile.label}
+              </a>
+            ))}
+          </div>
         </div>
         <div className="flex flex-wrap gap-4 text-sm text-slate-400">
           {footerLinks.map((link) => (

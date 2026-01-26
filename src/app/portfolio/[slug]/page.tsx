@@ -2,15 +2,11 @@ import { notFound } from "next/navigation";
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import { projects } from "@/lib/data";
 
-type Props = {
-  params: { slug: string };
-};
-
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-export function generateMetadata({ params }: Props) {
+export function generateMetadata({ params }: { params: { slug: string } }) {
   const project = projects.find((item) => item.slug === params.slug);
   if (!project) {
     return {
@@ -23,7 +19,7 @@ export function generateMetadata({ params }: Props) {
   };
 }
 
-export default function CaseStudyPage({ params }: Props) {
+export default function CaseStudyPage({ params }: { params: { slug: string } }) {
   const project = projects.find((item) => item.slug === params.slug);
 
   if (!project) {

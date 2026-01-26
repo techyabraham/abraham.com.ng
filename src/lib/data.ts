@@ -55,28 +55,32 @@ export const stats = [
 export const paths = [
   {
     title: "Consulting & Growth Systems",
-    body: "Strategic advisory for scaling digital products and marketing systems.",
+    body:
+      "Strategic advisory and system design for founders and businesses building serious digital products.",
     href: "/consulting",
     theme: "blue",
     icon: "rocket",
   },
   {
     title: "Products I'm Building",
-    body: "Explore the digital products and platforms currently in development.",
+    body:
+      "Explore the platforms, tools, and ideas currently in development across multiple sectors.",
     href: "/portfolio",
     theme: "purple",
     icon: "code",
   },
   {
     title: "Writing & Ideas",
-    body: "Deep dives on product strategy, growth, and technology leadership.",
+    body:
+      "Essays on product strategy, growth systems, leadership, and building technology that matters.",
     href: "/writing",
     theme: "amber",
     icon: "pen",
   },
   {
     title: "Speaking & Media",
-    body: "Conference talks, workshops, and public speaking engagements.",
+    body:
+      "Keynotes, workshops, and conversations on product development, growth, and building in emerging markets.",
     href: "/speaking",
     theme: "green",
     icon: "mic",
@@ -144,6 +148,95 @@ export const consultingEngagements = [
     body: "End-to-end launch support from go-to-market to feedback loops.",
   },
 ];
+
+export const consultingHero = {
+  title: "How I Help Businesses Build, Grow, and Scale",
+  subtext:
+    "I design digital systems that combine product thinking, engineering, and growth strategy — helping ideas become usable products and products reach the people who need them.",
+};
+
+export const consultingIntro =
+  "Over nearly two decades of building technology and advising growth systems, I’ve learned that successful products are rarely the result of isolated efforts. They emerge from clarity, structure, and well-designed systems working together. My role is to help founders, teams, and organizations design those systems — from idea to execution, and from launch to scale.";
+
+export const consultingSystems = [
+  {
+    category: "Build",
+    items: [
+      {
+        title: "Web Systems Development",
+        body:
+          "I design and build secure, scalable websites and web applications optimized across devices — engineered for performance, reliability, and long-term growth.",
+      },
+      {
+        title: "Mobile App Development",
+        body:
+          "I help transform strong ideas into usable mobile products for Android and iOS — focusing on clarity, usability, and scalability from the start.",
+      },
+      {
+        title: "WordPress Engineering",
+        body:
+          "I build WordPress-based platforms structured for flexibility, speed, and growth — using WordPress as a system, not a limitation.",
+      },
+    ],
+  },
+  {
+    category: "Optimize",
+    items: [
+      {
+        title: "WordPress Performance Optimization",
+        body:
+          "I audit and optimize WordPress installations to improve loading speed, stability, and real-world performance.",
+      },
+      {
+        title: "WordPress Security Hardening",
+        body:
+          "I implement security measures that protect websites against spam, vulnerabilities, and malicious attacks.",
+      },
+    ],
+  },
+  {
+    category: "Grow",
+    items: [
+      {
+        title: "Product Management & Strategy",
+        body:
+          "I help structure ideas into usable products by defining features, flows, priorities, and direction — ensuring long-term product adoption.",
+      },
+      {
+        title: "Digital Marketing Strategy",
+        body:
+          "I design structured marketing systems that connect offers to the right audience through intentional campaigns and measurable growth loops.",
+      },
+      {
+        title: "Search Engine Optimization (SEO)",
+        body:
+          "I help businesses become discoverable when people actively search for their solutions — turning visibility into long-term leverage.",
+      },
+    ],
+  },
+];
+
+export const consultingPrinciples = [
+  "Clarity before complexity",
+  "Systems over shortcuts",
+  "Long-term thinking over temporary wins",
+  "People-first design",
+];
+
+export const consultingAudience = [
+  "Founders building digital products",
+  "Businesses ready to grow intentionally",
+  "Organizations seeking structure and clarity",
+  "Teams tired of trial-and-error execution",
+];
+
+export const consultingCta = {
+  title: "Let’s Build Something That Matters",
+  body:
+    "If you’re working on a product, platform, or idea that deserves clarity, structure, and direction — let’s have a conversation.",
+  primary: "Book a Call",
+  secondary: "Start a Conversation",
+};
 
 export const projects: Project[] = [
   {
@@ -274,6 +367,90 @@ export const projects: Project[] = [
     cta: {
       label: "Start Learning",
       href: "https://skillsair.com",
+    },
+  },
+  {
+    slug: "oasix-holdings",
+    name: "Oasix Holdings",
+    summary:
+      "A diversified services and investment company delivering integrated solutions across real estate, transport, logistics, healthcare, legal, and personal services.",
+    category: "Holding Company / Multi-Service Enterprise / Business Solutions",
+    year: "2025",
+    role: "Designer • Product Designer • Developer",
+    stack: [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "WordPress",
+      "Elementor",
+      "CSS3",
+      "JavaScript",
+      "Figma",
+      "Google Workspace",
+      "cPanel Hosting",
+    ],
+    outcome: [
+      "Built a unified digital identity for multiple business units.",
+      "Structured service offerings under one holding brand.",
+      "Designed scalable service pages for expansion.",
+      "Established professional brand credibility online.",
+      "Improved customer trust through clear communication.",
+    ],
+    cover: "/images/projects/oasix-holdings.jpg",
+    overview:
+      "Oasix Holdings provides reliable, professional, customer-centric solutions across diverse industries while maintaining one strong corporate identity.",
+    problem:
+      "Customers struggle to find trustworthy service providers, fragmented services reduce efficiency, and many businesses lack a structured corporate presentation.",
+    solution:
+      "We unified service divisions under one holding brand, standardized quality and communication, and positioned the company as a trusted multi-service provider.",
+    screenshots: ["/images/projects/oasix-holdings.jpg"],
+    links: {
+      live: "https://oasixholdings.com",
+    },
+    cta: {
+      label: "Visit Company Website",
+      href: "https://oasixholdings.com",
+    },
+  },
+  {
+    slug: "bezal-homes",
+    name: "Bezal Homes",
+    summary:
+      "A premium real estate developer focused on luxury residential properties and smart investments in prime locations.",
+    category: "Real Estate Development / Property Investment",
+    year: "2023",
+    role: "Website Developer",
+    stack: [
+      "React",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Web Design",
+      "Hosting & Deployment",
+    ],
+    outcome: [
+      "Redesigned a professional real estate showcase website.",
+      "Highlighted company story, vision, and mission.",
+      "Structured key property projects for visibility.",
+      "Helped establish online trust and brand credibility.",
+      "Streamlined contact and inquiry pathways.",
+    ],
+    cover: "/images/projects/bezal-homes.jpg",
+    overview:
+      "Bezal Homes & Investment Ltd develops and invests in high-end residential properties in Nigeria, emphasizing affordable luxury living and sustainable community transformation.",
+    problem:
+      "Real estate brands often lack online clarity, prospective clients need quick access to property details, and rising competition demands a stronger digital footprint.",
+    solution:
+      "We built a polished site that communicates mission and values clearly, highlights signature projects with strong visuals, and streamlines inquiry paths to reinforce trust.",
+    screenshots: ["/images/projects/bezal-homes.jpg"],
+    links: {
+      live: "https://bezalhomes.ng",
+      github: "https://github.com/efactor-solutions/bezalhomes",
+    },
+    cta: {
+      label: "Contact Bezal Homes",
+      href: "mailto:info@bezalhomes.ng",
     },
   },
   {
@@ -598,8 +775,9 @@ export const contactMethods = [
 ];
 
 export const contactDirect = {
-  email: "hello@abrahamakomolafe.com",
+  email: "abraham@abraham.com.ng",
   whatsapp: "WhatsApp",
+  whatsappLink: "https://wa.me/2348182126524",
   responseTime: "Average response time: 24 hours",
 };
 
@@ -662,3 +840,22 @@ export const aboutPage = {
     ],
   },
 };
+
+export const socialProfiles = [
+  {
+    label: "GitHub",
+    href: "https://github.com/techyabraham",
+  },
+  {
+    label: "WordPress",
+    href: "https://profiles.wordpress.org/techyabraham",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/abraham-akomolafe/",
+  },
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/2348182126524",
+  },
+];

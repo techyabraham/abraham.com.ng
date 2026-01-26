@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { styles } from "@/lib/styles";
 
 type SectionProps = {
   eyebrow?: string;
@@ -21,7 +22,7 @@ export default function Section({
     align === "center" ? "text-center items-center mx-auto" : "text-left items-start";
 
   return (
-    <section className={`py-16 sm:py-20 ${className}`.trim()}>
+    <section className={`${styles.section} py-16 sm:py-20 ${className}`.trim()}>
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className={`flex flex-col ${alignment} max-w-3xl`}>
           {eyebrow ? (
@@ -29,7 +30,7 @@ export default function Section({
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-slate-100 sm:text-4xl">
+          <h2 className={`mt-4 font-display ${styles.sectionTitle}`}>
             {title}
           </h2>
           {description ? (

@@ -52,9 +52,22 @@ export default function ContactPage() {
           >
             {contactDirect.email}
           </a>
-          <span className="rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-emerald-300">
+          <a
+            href={contactDirect.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-4 py-2 text-emerald-300"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              className="h-4 w-4"
+              fill="currentColor"
+            >
+              <path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.5 1.33 5.03L2 22l5.09-1.33A9.96 9.96 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-10-10-10Zm5.84 14.5c-.25.7-1.46 1.33-2.01 1.41-.5.08-1.12.12-1.8-.12-.42-.13-.96-.31-1.66-.62-2.91-1.27-4.8-4.24-4.94-4.44-.15-.2-1.17-1.56-1.17-2.98 0-1.41.74-2.1 1-2.38.25-.28.55-.35.74-.35h.53c.17 0 .4-.06.62.47.24.55.8 1.9.87 2.04.06.14.1.3.02.48-.08.17-.12.3-.24.46-.12.15-.25.35-.36.47-.12.12-.24.25-.1.5.15.25.66 1.08 1.42 1.75.98.87 1.8 1.15 2.06 1.28.26.14.42.12.57-.07.15-.2.65-.75.82-1.01.18-.26.35-.21.58-.13.24.08 1.5.7 1.75.83.26.13.43.2.49.32.06.11.06.68-.2 1.38Z" />
+            </svg>
             {contactDirect.whatsapp}
-          </span>
+          </a>
         </div>
         <p className="mt-4 text-xs text-slate-500">
           {contactDirect.responseTime}

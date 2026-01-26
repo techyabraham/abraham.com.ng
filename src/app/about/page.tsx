@@ -1,7 +1,8 @@
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import Section from "@/components/Section";
-import { aboutPage } from "@/lib/data";
+import { aboutPage, socialProfiles } from "@/lib/data";
+import { styles } from "@/lib/styles";
 
 export const metadata = {
   title: "About | Abraham Akomolafe",
@@ -47,6 +48,22 @@ export default function AboutPage() {
             <p key={item} className="text-sm text-slate-200">
               {item}
             </p>
+          ))}
+        </Card>
+      </Section>
+
+      <Section title="Profiles">
+        <Card className="flex flex-wrap gap-2">
+          {socialProfiles.map((profile) => (
+            <a
+              key={profile.label}
+              href={profile.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.tag}
+            >
+              {profile.label}
+            </a>
           ))}
         </Card>
       </Section>

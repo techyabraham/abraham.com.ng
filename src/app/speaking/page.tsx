@@ -8,6 +8,7 @@ import {
   speakingStats,
   speakingTopics,
 } from "@/lib/data";
+import { styles } from "@/lib/styles";
 
 export const metadata = {
   title: "Speaking | Abraham Akomolafe",
@@ -22,7 +23,7 @@ export default function SpeakingPage() {
     >
       <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6">
-          <div className="overflow-hidden rounded-2xl border border-slate-800/70 bg-slate-950/40">
+          <div className={`${styles.imageFrame} border-slate-800/70 bg-slate-950/40`}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
               <Image

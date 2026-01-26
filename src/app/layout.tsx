@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { styles } from "@/lib/styles";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-display",
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${spaceGrotesk.variable} ${inter.variable} antialiased`}>
-        <div className="min-h-screen bg-slate-950 text-slate-100">
+        <div className={`min-h-screen ${styles.page}`}>
           <Navbar />
           <main>{children}</main>
           <Footer />
