@@ -6,8 +6,15 @@ export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = projects.find((item) => item.slug === params.slug);
+type Params = { slug: string };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const resolvedParams = await params;
+  const project = projects.find((item) => item.slug === resolvedParams.slug);
   if (!project) {
     return {
       title: "Case Study | Abraham Akomolafe",
@@ -19,8 +26,13 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((item) => item.slug === params.slug);
+export default async function CaseStudyPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const resolvedParams = await params;
+  const project = projects.find((item) => item.slug === resolvedParams.slug);
 
   if (!project) {
     notFound();
