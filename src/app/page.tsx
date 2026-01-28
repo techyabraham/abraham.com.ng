@@ -156,7 +156,7 @@ export default function Home() {
         align="center"
       >
         <div className="grid gap-6 md:grid-cols-2">
-          {paths.map((item) => {
+          {paths.slice(0, 4).map((item) => {
             const theme = pathThemes[item.theme as keyof typeof pathThemes];
             return (
               <Card
@@ -182,6 +182,11 @@ export default function Home() {
               </Card>
             );
           })}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <Button href="/services" variant="secondary">
+            View All Services
+          </Button>
         </div>
       </Section>
 

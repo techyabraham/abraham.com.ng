@@ -54,34 +54,66 @@ export const stats = [
 
 export const paths = [
   {
-    title: "Consulting & Growth Systems",
+    title: "Product Management",
     body:
-      "Strategic advisory and system design for founders and businesses building serious digital products.",
+      "Hand over your next big idea and watch me shape it into a product people genuinely love to use.",
     href: "/consulting",
     theme: "blue",
     icon: "rocket",
   },
   {
-    title: "Products I'm Building",
+    title: "Website Development",
     body:
-      "Explore the platforms, tools, and ideas currently in development across multiple sectors.",
-    href: "/portfolio",
+      "Hire me to build secure, fast, and cross-platform websites or web apps for your business, brand, or cause.",
+    href: "/consulting",
     theme: "purple",
     icon: "code",
   },
   {
-    title: "Writing & Ideas",
+    title: "Mobile App Development",
     body:
-      "Essays on product strategy, growth systems, leadership, and building technology that matters.",
-    href: "/writing",
+      "I’ll evaluate your idea and turn it into a powerful mobile app deployed on Android and iOS for real users.",
+    href: "/consulting",
+    theme: "amber",
+    icon: "mic",
+  },
+  {
+    title: "WordPress Development",
+    body:
+      "Power your digital solution with WordPress — flexible, reliable, and trusted by over 40% of the internet.",
+    href: "/consulting",
+    theme: "green",
+    icon: "pen",
+  },
+  {
+    title: "WordPress Speed Optimization",
+    body:
+      "It’s not too late to make your website fast. Share your link and I’ll handle the optimization for you.",
+    href: "/consulting",
+    theme: "blue",
+    icon: "code",
+  },
+  {
+    title: "WordPress Security",
+    body:
+      "I know exactly how to secure WordPress websites against hacks, malware, and spam. Let’s lock it down.",
+    href: "/consulting",
+    theme: "purple",
+    icon: "rocket",
+  },
+  {
+    title: "Digital Marketing",
+    body:
+      "A good product doesn’t sell itself. I’ll help you create campaigns that attract and convert the right audience.",
+    href: "/consulting",
     theme: "amber",
     icon: "pen",
   },
   {
-    title: "Speaking & Media",
+    title: "SEO (Search Engine Optimization)",
     body:
-      "Keynotes, workshops, and conversations on product development, growth, and building in emerging markets.",
-    href: "/speaking",
+      "People are searching for you — they just can’t find you yet. I’ll help your brand show up on Google when it matters.",
+    href: "/consulting",
     theme: "green",
     icon: "mic",
   },

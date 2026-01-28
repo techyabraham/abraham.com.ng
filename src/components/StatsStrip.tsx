@@ -86,7 +86,7 @@ function StatCounter({ label, value, suffix, play }: StatCounterProps) {
       return;
     }
 
-    const duration = 1200;
+    const duration = 2400;
     const startTime = performance.now();
 
     const animate = (now: number) => {
