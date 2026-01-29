@@ -123,6 +123,32 @@
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(139, 92, 246, 0.9));
 }
 
+.signature-path {
+  fill: none;
+  stroke: rgba(17, 24, 39, 0.85);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: signatureDraw 2000ms ease-out forwards;
+}
+
+@keyframes signatureDraw {
+  0% {
+    stroke-dashoffset: 1400;
+    opacity: 0.1;
+  }
+  85% {
+    stroke-dashoffset: 0;
+    opacity: 0.85;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
 @keyframes heroGlow {
   0%,
   100% {

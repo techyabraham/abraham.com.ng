@@ -43,4 +43,20 @@ export const styles = {
   imageFrame:
     "relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden " +
     "shadow-[0_18px_45px_rgba(0,0,0,0.45)]",
+
+  homeAboutSection: "w-full bg-[#FAFAF9] text-[#1F2937]",
+  homeAboutInner: "mx-auto w-full max-w-6xl px-6 py-16 md:py-24",
+  homeAboutGrid: "grid gap-10 md:grid-cols-[0.9fr_1.1fr]",
+  homeAboutEyebrow: "text-xs uppercase tracking-[0.3em] text-[#6B7280]",
+  homeAboutName:
+    "mt-4 text-3xl md:text-4xl font-medium tracking-wide text-[#111827]",
+  homeAboutText: "text-sm md:text-base leading-7 text-[#374151]",
+  homeAboutStack: "space-y-5",
+  homeAboutMicro: "mt-6 text-sm text-[#4B5563]",
+  homeAboutBeliefs: "mt-6 space-y-2 text-sm text-[#111827]",
+  homeAboutCta: "mt-6",
+  homeAboutButton:
+    "inline-flex items-center justify-center rounded-xl border border-[#111827]/30 px-5 py-3 " +
+    "text-sm font-semibold text-[#111827] transition duration-300 ease-out " +
+    "hover:-translate-y-0.5 hover:bg-[#111827]/5",
 };

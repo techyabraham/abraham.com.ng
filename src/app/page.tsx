@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import HomeAboutSection from "@/components/home/HomeAboutSection";
 import ProjectCard from "@/components/ProjectCard";
 import Section from "@/components/Section";
 import StatsStrip from "@/components/StatsStrip";
@@ -148,6 +149,8 @@ export default function Home() {
           <StatsStrip stats={stats} />
         </div>
       </section>
+
+      <HomeAboutSection />
 
       <Section
         eyebrow="Choose Your Path"
