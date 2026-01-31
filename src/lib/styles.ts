@@ -49,7 +49,7 @@ export const styles = {
   homeAboutGrid: "grid gap-10 md:grid-cols-[0.9fr_1.1fr]",
   homeAboutEyebrow: "text-xs uppercase tracking-[0.3em] text-[#6B7280]",
   homeAboutName:
-    "mt-4 text-3xl md:text-4xl font-medium tracking-wide text-[#111827]",
+    "mt-4 text-5xl md:text-7xl font-medium tracking-wide text-[#111827] leading-tight",
   homeAboutText: "text-sm md:text-base leading-7 text-[#374151]",
   homeAboutStack: "space-y-5",
   homeAboutMicro: "mt-6 text-sm text-[#4B5563]",

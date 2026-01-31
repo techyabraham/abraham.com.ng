@@ -7,7 +7,7 @@ const footerLinks = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/consulting", label: "Consulting" },
   { href: "/writing", label: "Writing" },
-  { href: "/books", label: "Books" },
+  { href: "/books", label: "Store" },
   { href: "/speaking", label: "Speaking" },
   { href: "/contact", label: "Contact" },
 ];

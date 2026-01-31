@@ -672,30 +672,52 @@ export const books: Book[] = [
   },
 ];
 
-export const publications = [
+export type StoreItem = {
+  slug: string;
+  title: string;
+  subtitle: string;
+  summary: string;
+  description?: string;
+  theme: "amber" | "blue" | "purple";
+  href: string;
+  cover?: string;
+};
+
+export const publications: StoreItem[] = [
   {
-    title: "The Product Playbook",
-    subtitle: "Systems for Building Digital Products That Scale",
+    slug: "google-bypass",
+    title: "Google Bypass",
+    subtitle:
+      "An intensive compilation of quality information that you need to have before desiring or embarking on starting out a new Internet Business — these information will take at least 1 year of consistent “googling” before you have just 1/13 of it.",
     summary:
-      "A comprehensive guide to product development, from ideation to market fit.",
+      "A comprehensive guide to building a strong foundation before launching a new internet business.",
     theme: "amber",
-    href: "/books",
+    href: "/store/google-bypass",
+    cover: "/images/store/ultimate-internet-business-guide.jpg",
+    description:
+      "Google Bypass is a deep, practical field guide for founders and aspiring internet entrepreneurs who want a grounded path into online business. It compresses years of research into a single, structured resource you can use to make better decisions, avoid common traps, and build from clarity.",
   },
   {
+    slug: "growth-architecture",
     title: "Growth Architecture",
     subtitle: "Engineering Marketing Systems That Compound",
     summary:
       "How to build sustainable growth engines for digital businesses.",
     theme: "blue",
-    href: "/books",
+    href: "/store/growth-architecture",
+    description:
+      "A blueprint for building marketing systems that compound. This resource maps the levers that drive acquisition, activation, and retention without noise.",
   },
   {
+    slug: "the-technical-leader",
     title: "The Technical Leader",
     subtitle: "Bridging Code, Strategy, and Impact",
     summary:
       "Leadership lessons for developers transitioning into strategic roles.",
     theme: "purple",
-    href: "/books",
+    href: "/store/the-technical-leader",
+    description:
+      "A concise guide for builders stepping into leadership—aligning technical depth with product strategy, team clarity, and measurable impact.",
   },
 ];
 

@@ -149,6 +149,41 @@
   }
 }
 
+.title-slider {
+  position: relative;
+}
+
+.title-slider-track {
+  display: flex;
+  flex-direction: column;
+  animation-name: titleSlideUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes titleSlideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-slider-track {
+    animation: none;
+  }
+
+  .title-slider {
+    display: none;
+  }
+
+  .title-slider-static {
+    display: flex;
+  }
+}
+
 @keyframes heroGlow {
   0%,
   100% {

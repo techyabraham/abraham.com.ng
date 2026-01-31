@@ -27,7 +27,7 @@ export default function SpeakingPage() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
               <Image
-                src="/images/speaking.svg"
+                src="/images/speaking.jpg"
                 alt="Abraham Akomolafe speaking on stage"
                 width={900}
                 height={700}

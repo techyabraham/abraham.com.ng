@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { styles } from "@/lib/styles";
-import SignatureName from "@/components/home/SignatureName";
 import { socialProfiles } from "@/lib/data";
+import { Grand_Hotel } from "next/font/google";
+import TitleSliderUp from "@/components/home/TitleSliderUp";
+
+const signatureFont = Grand_Hotel({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
 
 export default function HomeAboutSection() {
   return (
@@ -10,7 +17,24 @@ export default function HomeAboutSection() {
         <div className={styles.homeAboutGrid}>
           <div>
             <p className={styles.homeAboutEyebrow}>About Abraham</p>
-            <SignatureName className="mt-4" />
+            <p
+              className={`${styles.homeAboutName} ${signatureFont.className} font-normal`}
+            >
+              Abraham Tobi Akomolafe
+            </p>
+            <div className="mt-3">
+              <TitleSliderUp
+                items={[
+                  "Software Developer",
+                  "Mobile App Developer",
+                  "WordPress Developer",
+                  "SEO Specialist",
+                  "Author",
+                  "Digital Marketer",
+                  "Product Manager",
+                ]}
+              />
+            </div>
             <p className="mt-2 text-xs uppercase tracking-[0.3em] text-[#6B7280]">
               Product Builder • Growth Strategist • Author • Speaker
             </p>

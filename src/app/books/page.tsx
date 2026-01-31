@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Section from "@/components/Section";
 import { publications } from "@/lib/data";
 
 export const metadata = {
-  title: "Books | Abraham Akomolafe",
-  description: "Books and long-form work by Abraham Akomolafe.",
+  title: "Store | Abraham Akomolafe",
+  description: "Books, courses, and resources by Abraham Akomolafe.",
 };
 
 export default function BooksPage() {
   return (
     <Section
-      eyebrow="Books & Publications"
-      title="Deep knowledge distilled into practical frameworks for builders and leaders."
+      eyebrow="Store"
+      title="Books, courses, and resources for builders and leaders."
       align="center"
     >
       <div className="grid gap-6 md:grid-cols-3">
@@ -25,18 +26,43 @@ export default function BooksPage() {
               <div
                 className={`relative flex aspect-[3/4] flex-col justify-between overflow-hidden rounded-2xl px-8 py-10 shadow-2xl ${themeMap[book.theme as keyof typeof themeMap]}`}
               >
-                <div className="pointer-events-none absolute inset-0 opacity-20 book-dots" />
-                <div className="relative space-y-2 text-slate-100">
-                  <h3 className="font-display text-2xl font-semibold">
-                    {book.title}
-                  </h3>
-                  <p className="text-sm text-slate-100/80">
-                    {book.subtitle}
-                  </p>
-                </div>
-                <div className="relative text-xs text-slate-100/80">
-                  Abraham Akomolafe
-                </div>
+                {book.cover ? (
+                  <>
+                    <Image
+                      src={book.cover}
+                      alt={book.title}
+                      fill
+                      className="object-cover opacity-45"
+                    />
+                    <div className="pointer-events-none absolute inset-0 opacity-20 book-dots" />
+                    <div className="relative space-y-2 text-slate-100">
+                      <h3 className="font-display text-2xl font-semibold">
+                        {book.title}
+                      </h3>
+                      <p className="text-sm text-slate-100/80">
+                        {book.subtitle}
+                      </p>
+                    </div>
+                    <div className="relative text-xs text-slate-100/80">
+                      Abraham Akomolafe
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="pointer-events-none absolute inset-0 opacity-20 book-dots" />
+                    <div className="relative space-y-2 text-slate-100">
+                      <h3 className="font-display text-2xl font-semibold">
+                        {book.title}
+                      </h3>
+                      <p className="text-sm text-slate-100/80">
+                        {book.subtitle}
+                      </p>
+                    </div>
+                    <div className="relative text-xs text-slate-100/80">
+                      Abraham Akomolafe
+                    </div>
+                  </>
+                )}
               </div>
               <p className="text-sm text-slate-400">{book.summary}</p>
               <div className="flex items-center gap-3">
