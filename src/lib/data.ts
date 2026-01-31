@@ -681,6 +681,7 @@ export type StoreItem = {
   theme: "amber" | "blue" | "purple";
   href: string;
   cover?: string;
+  purchaseLink?: string;
 };
 
 export const publications: StoreItem[] = [
@@ -694,19 +695,23 @@ export const publications: StoreItem[] = [
     theme: "amber",
     href: "/store/google-bypass",
     cover: "/images/store/ultimate-internet-business-guide.jpg",
+    purchaseLink: "https://selar.com/xwru",
     description:
-      "Google Bypass is a deep, practical field guide for founders and aspiring internet entrepreneurs who want a grounded path into online business. It compresses years of research into a single, structured resource you can use to make better decisions, avoid common traps, and build from clarity.",
+      "Are you tired of seeing courses from everywhere on the internet on how to make money online without knowing which course is real?\n\nDo you want to start an internet business or join those doing well online but do not know where to start from?\n\nTheir is a lot of people who claim to want to help you but really only want to sell their substandard courses to you.\n\nI created this Ebook to help you solve all these problems.\n\nYou have used Google but you seem to not know what to consume...\n\nThis book picks you from the very beginning and ushers you into the level where you will start getting results.\n\nIn this guide...\n\nI listed all the real internet money making online courses that will get you results.\n\nAll of them have been proven to provide positive results. You can not get it wrong.\n\nSo, instead of spending months and possible years searching on Google and trying to figure things out yourself,\n\nI have used my vast experience of using and earning from the internet to get you all the resources that you need to get positive results\n\nI have done all the research for you.\n\nJust download this book and start following the steps that I lead you to take\n\nFollow all my recommendations. I guarantee you that you will get positive results\n\nTheir is real money on the internet but it is important that you get the right resources so you don't get discouraged even before you start\n\nIn this book, you will also find:\n\nFree quality courses for all the 14 online internet businesses covered\nA simplified explanation of the top 14 easy to start hottest online businesses that you should start in 2023. I explained them to you like you are a 10 year old\nA list of already successful mentors that consistently shares knowledge on your preferred internet business.\nA list of all the online communities that you should join to connect to like minds who have the same interest as you. These groups are for open sharing of knowledge. You will learn from others' successes and mistakes freely\n\nWill you use this ebook to get the courses that have been roven to get positive results or you will go back to Google to keep searching, buying courses and keep testing them till you find what works\n\nI know you do not have that much time or money to waste.\n\nSave yourself some time and get a copy of \"The Ultimate Internet Google Business\" now.",
   },
   {
-    slug: "growth-architecture",
-    title: "Growth Architecture",
-    subtitle: "Engineering Marketing Systems That Compound",
+    slug: "koboless-viral-marketing",
+    title: "Koboless Viral Marketing",
+    subtitle:
+      "How I get high paying gigs through Social Media Without Spending A Kobo On Advertisement",
     summary:
-      "How to build sustainable growth engines for digital businesses.",
+      "A practical guide to generating sales and high-paying gigs through organic social media strategies without ad spend.",
     theme: "blue",
-    href: "/store/growth-architecture",
+    href: "/store/koboless-viral-marketing",
+    cover: "/images/store/koboless-viral-marketing.jfif",
+    purchaseLink: "https://selar.com/kobolessmarketing",
     description:
-      "A blueprint for building marketing systems that compound. This resource maps the levers that drive acquisition, activation, and retention without noise.",
+      "All you have ever believed is that you need a lot of money to market your products and services on the internet in order to increase your number of customers sales. I am here to tell you that is not true. You can make massive sales without paying a Kobo on marketing.\n\nI wrote this straight-to-the-point book to burst your bubble and open you up to the methods you can use to get more customers and increase your sales without spending a kobo on marketing.\n\nDon't get it twisted, properly done paid adverts are great, but it is always a very good option to grow an organic following that likes and trusts you enough to always patronize you and recommend you to their friends and family. Can you do that on the internet with strangers that have barely met you? The answer is an emphatic yes. I have done it over and over again and you can do the same, if you follow my lead.\n\nThis book will open your eyes to...\n\nMany neglected means you should already be using to get in those extra sales for your business, most especially through the internet.\nThose strategies that the people you see as pros today used to get the clients and referrals that helped their growth.\n\nIn this book...\n\nI will show you practical steps with proven results from myself on how I use the social media to close deals without paying for adverts.\n\nI will show you screenshots of how I used the social media and the positive results it produced for me.\n\nI will show you what will help you generate enough materials for you to subtly promote your business on the social media without sounding pushy or annoying to your audience\n\nI will show how you can sell to total strangers without them needing to meet you.\n\nSay no more, click the button to get a copy immediately",
   },
   {
     slug: "the-technical-leader",
