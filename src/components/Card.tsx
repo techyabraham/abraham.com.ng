@@ -16,7 +16,7 @@ export default function Card({
 
   return (
     <div
-      className={`${baseClass} ${styles.card} rounded-2xl p-6 ${className}`.trim()}
+      className={`${baseClass} ${styles.card} animate-fade-up rounded-2xl p-6 ${className}`.trim()}
     >
       {children}
     </div>

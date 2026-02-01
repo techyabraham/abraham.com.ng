@@ -793,28 +793,34 @@ export const recentTalks = [
 
 export const labProjects = [
   {
-    name: "QuantumFlow",
-    description: "AI-powered workflow automation platform for modern teams.",
-    status: "Live",
-    phase: "Scaling",
-    progress: 100,
-    theme: "green",
-  },
-  {
-    name: "MentorMatch",
-    description: "Connecting professionals with expert mentors in their field.",
+    name: "Flight Flow Pro",
+    description:
+      "A WordPress plugin that helps developers integrate full flight booking features on their websites.",
     status: "MVP",
     phase: "Testing",
-    progress: 75,
+    progress: 70,
     theme: "blue",
+    github: "",
   },
   {
-    name: "ContentEngine",
-    description: "Smart content management and distribution system for creators.",
+    name: "Lifeline",
+    description:
+      "A security and emergency app for Nigerians, helping people get help in times of emergency anywhere in Nigeria.",
+    status: "MVP",
+    phase: "Development",
+    progress: 80,
+    theme: "green",
+    github: "https://github.com/techyabraham/lifeline",
+  },
+  {
+    name: "RoadWorthy",
+    description:
+      "A road assistant for vehicle users in Nigeria, helping them stay compliant with legal requirements.",
     status: "Concept",
     phase: "Research",
     progress: 25,
     theme: "amber",
+    github: "",
   },
 ];
 

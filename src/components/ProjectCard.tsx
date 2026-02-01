@@ -10,7 +10,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
-      className={`${styles.card} group overflow-hidden rounded-2xl border border-slate-900/70 bg-slate-950/40 transition hover:border-slate-600`}
+      className={`${styles.card} animate-fade-up group overflow-hidden rounded-2xl border border-slate-900/70 bg-slate-950/40 transition hover:border-slate-600`}
     >
       <Link href={`/portfolio/${project.slug}`} className="block overflow-hidden">
         <Image

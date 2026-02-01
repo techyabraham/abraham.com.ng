@@ -112,27 +112,27 @@ export default function Home() {
   return (
     <div>
       <section className="mx-auto w-full max-w-6xl px-6 pb-16 pt-16 sm:pt-24">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] animate-fade-up">
           <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
+            <p className="text-xs uppercase tracking-[0.3em] text-slate-500 animate-fade-up delay-1">
               Personal Operating System
             </p>
-            <h1 className="font-display text-4xl font-semibold leading-tight text-slate-100 sm:text-5xl">
+            <h1 className="font-display text-4xl font-semibold leading-tight text-slate-100 sm:text-5xl animate-fade-up delay-2">
               Abraham Akomolafe builds product systems, growth engines, and
               market narratives that scale.
             </h1>
-            <p className="text-lg leading-8 text-slate-300">
+            <p className="text-lg leading-8 text-slate-300 animate-fade-up delay-3">
               Product & software developer. Marketing and growth consultant.
               Author, speaker, and founder building multi-product platforms.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-fade-up delay-4">
               <Button href="/contact">Work With Me</Button>
               <Button href="/portfolio" variant="secondary">
                 View Portfolio
               </Button>
             </div>
           </div>
-          <div className={`${styles.imageFrame} relative`}>
+          <div className={`${styles.imageFrame} relative animate-fade-in delay-3`}>
             <div className="hero-glow" aria-hidden="true" />
             <div className="hero-glow-mask" aria-hidden="true" />
             <Image
@@ -245,7 +245,7 @@ export default function Home() {
         description="Selected case studies that show the depth across product, growth, and systems design."
       >
         <div className="grid gap-6 lg:grid-cols-3">
-          {projects.map((project) => (
+          {projects.slice(0, 6).map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
@@ -388,7 +388,7 @@ export default function Home() {
                     href={book.href}
                     className="flex-1 rounded-full border border-slate-800 bg-slate-950/60 px-4 py-2 text-center text-xs font-semibold text-slate-100 hover:border-slate-500"
                   >
-                    Read Sample
+                    Read More
                   </Link>
                   <button
                     type="button"
@@ -532,22 +532,40 @@ export default function Home() {
                   ) : null}
                 </div>
                 <div className="flex-1 rounded-2xl border border-slate-800/70 bg-slate-950/50 p-6">
-                  <div className="flex flex-wrap items-start justify-between gap-4">
-                    <div>
-                      <h3 className="font-display text-2xl text-slate-100">
-                        {project.name}
-                      </h3>
-                      <p className="mt-2 text-sm text-slate-300">
-                        {project.description}
-                      </p>
-                    </div>
-                    <div className="text-right text-xs text-slate-400">
-                      <span className="inline-flex rounded-full border border-slate-800 px-3 py-1 text-slate-100">
-                        {project.status}
-                      </span>
-                      <p className="mt-2">Phase: {project.phase}</p>
-                    </div>
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-display text-2xl text-slate-100">
+                      {project.name}
+                    </h3>
+                    <p className="mt-2 text-sm text-slate-300">
+                      {project.description}
+                    </p>
                   </div>
+                  <div className="text-right text-xs text-slate-400">
+                    <span className="inline-flex rounded-full border border-slate-800 px-3 py-1 text-slate-100">
+                      {project.status}
+                    </span>
+                    <p className="mt-2">Phase: {project.phase}</p>
+                    {project.github ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center justify-center rounded-full border border-slate-800 bg-slate-950/60 p-2 text-slate-300 hover:text-slate-100"
+                        aria-label={`${project.name} GitHub`}
+                      >
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 24 24"
+                          className="h-4 w-4"
+                          fill="currentColor"
+                        >
+                          <path d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.03 1.54 1.03.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03.8-.22 1.66-.33 2.51-.33.85 0 1.71.11 2.51.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.57.69.47C19.13 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10Z" />
+                        </svg>
+                      </a>
+                    ) : null}
+                  </div>
+                </div>
                   <div className="mt-6">
                     <div className="flex items-center justify-between text-xs text-slate-500">
                       <span>Development Progress</span>

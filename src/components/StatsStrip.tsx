@@ -56,7 +56,7 @@ export default function StatsStrip({ stats }: StatsStripProps) {
   return (
     <div
       ref={containerRef}
-      className={`${styles.card} grid gap-4 border border-slate-900/70 bg-slate-950/60 p-6 backdrop-blur sm:grid-cols-2 lg:grid-cols-4`}
+      className={`${styles.card} animate-fade-up grid gap-4 border border-slate-900/70 bg-slate-950/60 p-6 backdrop-blur sm:grid-cols-2 lg:grid-cols-4`}
     >
       {parsedStats.map((stat) => (
         <StatCounter

@@ -26,15 +26,15 @@ export default function Section({
       <div className="mx-auto w-full max-w-6xl px-6">
         <div className={`flex flex-col ${alignment} max-w-3xl`}>
           {eyebrow ? (
-            <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
+            <p className="animate-fade-up delay-1 text-xs uppercase tracking-[0.3em] text-slate-400">
               {eyebrow}
             </p>
           ) : null}
-          <h2 className={`mt-4 font-display ${styles.sectionTitle}`}>
+          <h2 className={`mt-4 font-display ${styles.sectionTitle} animate-fade-up delay-2`}>
             {title}
           </h2>
           {description ? (
-            <p className="mt-4 text-base leading-7 text-slate-300">
+            <p className="mt-4 text-base leading-7 text-slate-300 animate-fade-up delay-3">
               {description}
             </p>
           ) : null}

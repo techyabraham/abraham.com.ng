@@ -25,7 +25,7 @@ export default function CaseStudyLayout({ project }: CaseStudyLayoutProps) {
 
       <div className="mt-12 grid gap-6 lg:grid-cols-[2fr_1fr]">
         <div className="space-y-8">
-          <section className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <section className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <h2 className="font-display text-2xl text-slate-100">
               Project overview
             </h2>
@@ -33,19 +33,19 @@ export default function CaseStudyLayout({ project }: CaseStudyLayoutProps) {
               {project.overview}
             </p>
           </section>
-          <section className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <section className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <h2 className="font-display text-2xl text-slate-100">Problem</h2>
             <p className="mt-3 text-sm leading-6 text-slate-300">
               {project.problem}
             </p>
           </section>
-          <section className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <section className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <h2 className="font-display text-2xl text-slate-100">Solution</h2>
             <p className="mt-3 text-sm leading-6 text-slate-300">
               {project.solution}
             </p>
           </section>
-          <section className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <section className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <h2 className="font-display text-2xl text-slate-100">Outcome</h2>
             <ul className="mt-3 space-y-2 text-sm text-slate-300">
               {project.outcome.map((item) => (
@@ -59,13 +59,13 @@ export default function CaseStudyLayout({ project }: CaseStudyLayoutProps) {
         </div>
 
         <aside className="space-y-6">
-          <div className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <div className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
               Role
             </p>
             <p className="mt-3 text-sm text-slate-200">{project.role}</p>
           </div>
-          <div className={`${styles.card} glass-card rounded-2xl p-6`}>
+          <div className={`${styles.card} animate-fade-up glass-card rounded-2xl p-6`}>
             <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
               Stack
             </p>
@@ -87,7 +87,7 @@ export default function CaseStudyLayout({ project }: CaseStudyLayoutProps) {
         <h2 className="font-display text-2xl text-slate-100">Screenshots</h2>
         <div className="mt-6 grid gap-6 md:grid-cols-2">
           {project.screenshots.map((shot) => (
-            <div key={shot} className={`${styles.imageFrame} border-slate-900/60 bg-slate-950/40`}>
+            <div key={shot} className={`${styles.imageFrame} animate-fade-up border-slate-900/60 bg-slate-950/40`}>
               <Image
                 src={shot}
                 alt={`${project.name} screenshot`}

@@ -14,7 +14,7 @@ export default function HomeAboutSection() {
   return (
     <section className={styles.homeAboutSection}>
       <div className={styles.homeAboutInner}>
-        <div className={styles.homeAboutGrid}>
+        <div className={`${styles.homeAboutGrid} animate-fade-up`}>
           <div>
             <p className={styles.homeAboutEyebrow}>About Abraham</p>
             <p

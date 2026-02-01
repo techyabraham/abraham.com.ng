@@ -70,7 +70,7 @@ export default function BooksPage() {
                   href={book.href}
                   className="flex-1 rounded-full border border-slate-800 bg-slate-950/60 px-4 py-2 text-center text-xs font-semibold text-slate-100 hover:border-slate-500"
                 >
-                  Read Sample
+                  Read More
                 </a>
                 <button
                   type="button"
