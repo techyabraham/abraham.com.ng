@@ -117,11 +117,11 @@ export default function Home() {
             <p className="text-xs uppercase tracking-[0.3em] text-slate-500 animate-fade-up delay-1">
               Personal Operating System
             </p>
-            <h1 className="font-display text-4xl font-semibold leading-tight text-slate-100 sm:text-5xl animate-fade-up delay-2">
+            <h1 className="font-display text-2xl font-semibold leading-tight text-slate-100 sm:text-5xl animate-fade-up delay-2">
               I will help you build tech-powered products that your target users
               want and eventually love to use
             </h1>
-            <p className="text-lg leading-8 text-slate-300 animate-fade-up delay-3">
+            <p className="text-sm leading-8 text-slate-300 animate-fade-up delay-3 sm:text-lg">
               I build market-ready tech products
               <br />
               I create marketing strategies that sell products
