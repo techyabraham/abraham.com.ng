@@ -118,12 +118,12 @@ export default function Home() {
               Personal Operating System
             </p>
             <h1 className="font-display text-4xl font-semibold leading-tight text-slate-100 sm:text-5xl animate-fade-up delay-2">
-              Abraham Akomolafe builds product systems, growth engines, and
-              market narratives that scale.
+              I will help you build tech-powered products that your target users
+              want and eventually love to use
             </h1>
             <p className="text-lg leading-8 text-slate-300 animate-fade-up delay-3">
-              Product & software developer. Marketing and growth consultant.
-              Author, speaker, and founder building multi-product platforms.
+              I build market-ready tech products, I create marketing strategies
+              to sell your products, I train on what I know how to do
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-up delay-4">
               <Button href="/contact">Work With Me</Button>
