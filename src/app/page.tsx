@@ -122,8 +122,11 @@ export default function Home() {
               want and eventually love to use
             </h1>
             <p className="text-lg leading-8 text-slate-300 animate-fade-up delay-3">
-              I build market-ready tech products || I create marketing strategies
-              to sell products || and I share what I know with people
+              I build market-ready tech products
+              <br />
+              I create marketing strategies that sell products
+              <br />
+              I share what I know with people
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-up delay-4">
               <Button href="/contact">Work With Me</Button>
