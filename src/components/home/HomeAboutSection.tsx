@@ -35,9 +35,6 @@ export default function HomeAboutSection() {
                 ]}
               />
             </div>
-            <p className="mt-2 text-xs uppercase tracking-[0.3em] text-[#6B7280]">
-              Product Builder • Growth Strategist • Author • Speaker
-            </p>
             <div className="mt-6 flex flex-wrap gap-3">
               {socialProfiles
                 .filter((profile) =>
