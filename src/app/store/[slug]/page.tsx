@@ -16,7 +16,7 @@ export async function generateMetadata({
   const resolvedParams = await params;
   const item = publications.find((entry) => entry.slug === resolvedParams.slug);
   if (!item) {
-    return { title: "Store Item | Abraham Akomolafe" };
+    return { title: "Store Item | Abraham Akinwumi" };
   }
   return {
     title: `${item.title} | Store`,

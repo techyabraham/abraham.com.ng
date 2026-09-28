@@ -88,7 +88,7 @@ const pathIcons = {
 };
 
 export const metadata = {
-  title: "Services | Abraham Akomolafe",
+  title: "Services | Abraham Akinwumi",
   description: "Services and engagement areas for product, growth, and platform delivery.",
 };
 

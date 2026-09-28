@@ -917,7 +917,7 @@ export const socialProfiles = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/abraham-akomolafe/",
+    href: "https://www.linkedin.com/in/abraham-Akinwumi/",
   },
   {
     label: "WhatsApp",

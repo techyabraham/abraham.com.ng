@@ -3,8 +3,8 @@ import Section from "@/components/Section";
 import { publications } from "@/lib/data";
 
 export const metadata = {
-  title: "Store | Abraham Akomolafe",
-  description: "Books, courses, and resources by Abraham Akomolafe.",
+  title: "Store | Abraham Akinwumi",
+  description: "Books, courses, and resources by Abraham Akinwumi.",
 };
 
 export default function BooksPage() {
@@ -44,7 +44,7 @@ export default function BooksPage() {
                       </p>
                     </div>
                     <div className="relative text-xs text-slate-100/80">
-                      Abraham Akomolafe
+                      Abraham Akinwumi
                     </div>
                   </>
                 ) : (
@@ -59,7 +59,7 @@ export default function BooksPage() {
                       </p>
                     </div>
                     <div className="relative text-xs text-slate-100/80">
-                      Abraham Akomolafe
+                      Abraham Akinwumi
                     </div>
                   </>
                 )}

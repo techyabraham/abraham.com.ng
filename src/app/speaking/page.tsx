@@ -11,8 +11,8 @@ import {
 import { styles } from "@/lib/styles";
 
 export const metadata = {
-  title: "Speaking | Abraham Akomolafe",
-  description: "Speaking engagements and workshops by Abraham Akomolafe.",
+  title: "Speaking | Abraham Akinwumi",
+  description: "Speaking engagements and workshops by Abraham Akinwumi.",
 };
 
 export default function SpeakingPage() {
@@ -28,7 +28,7 @@ export default function SpeakingPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
               <Image
                 src="/images/speaking.jpg"
-                alt="Abraham Akomolafe speaking on stage"
+                alt="Abraham Akinwumi speaking on stage"
                 width={900}
                 height={700}
                 className="h-full w-full object-cover"

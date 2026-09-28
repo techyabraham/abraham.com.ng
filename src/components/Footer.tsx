@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-display text-lg font-semibold text-slate-100">
-            Abraham Akomolafe
+            Abraham Akinwumi
           </p>
           <p className="mt-2 text-sm text-slate-400">
             Product developer. Growth strategist. Author. Speaker.
@@ -45,7 +45,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-xs text-slate-500">
-          © {new Date().getFullYear()} Abraham Akomolafe. All rights reserved.
+          © {new Date().getFullYear()} Abraham Akinwumi. All rights reserved.
         </p>
       </div>
     </footer>

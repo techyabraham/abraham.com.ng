@@ -18,7 +18,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-lg font-semibold tracking-tight text-slate-100"
         >
-          Abraham Akomolafe
+          Abraham Akinwumi
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
           {navItems.map((item) => (

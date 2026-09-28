@@ -20,7 +20,7 @@ export default function HomeAboutSection() {
             <p
               className={`${styles.homeAboutName} ${signatureFont.className} font-normal`}
             >
-              Abraham Tobi Akomolafe
+              Abraham Tobi Akinwumi
             </p>
             <div className="mt-3">
               <TitleSliderUp

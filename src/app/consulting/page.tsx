@@ -11,7 +11,7 @@ import {
 } from "@/lib/data";
 
 export const metadata = {
-  title: "Consulting & Growth Systems — Abraham Akomolafe",
+  title: "Consulting & Growth Systems — Abraham Akinwumi",
   description:
     "Product strategy, digital systems, and growth consulting for founders and businesses building scalable platforms. Helping ideas become products and products reach the right audience.",
   openGraph: {

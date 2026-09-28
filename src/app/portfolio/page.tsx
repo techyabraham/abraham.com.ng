@@ -3,8 +3,8 @@ import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/data";
 
 export const metadata = {
-  title: "Portfolio | Abraham Akomolafe",
-  description: "Case studies and product systems built by Abraham Akomolafe.",
+  title: "Portfolio | Abraham Akinwumi",
+  description: "Case studies and product systems built by Abraham Akinwumi.",
 };
 
 export default function PortfolioPage() {

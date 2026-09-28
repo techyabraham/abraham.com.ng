@@ -2,7 +2,7 @@ import Section from "@/components/Section";
 import { featuredWriting, recentWritings } from "@/lib/data";
 
 export const metadata = {
-  title: "Writing | Abraham Akomolafe",
+  title: "Writing | Abraham Akinwumi",
   description: "Essays and frameworks on product, growth, and founder systems.",
 };
 

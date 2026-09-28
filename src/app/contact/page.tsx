@@ -4,8 +4,8 @@ import Section from "@/components/Section";
 import { contactDirect, contactMethods } from "@/lib/data";
 
 export const metadata = {
-  title: "Contact | Abraham Akomolafe",
-  description: "Start a project or speaking engagement with Abraham Akomolafe.",
+  title: "Contact | Abraham Akinwumi",
+  description: "Start a project or speaking engagement with Abraham Akinwumi.",
 };
 
 export default function ContactPage() {

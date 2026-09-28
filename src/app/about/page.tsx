@@ -5,8 +5,8 @@ import { aboutPage, socialProfiles } from "@/lib/data";
 import { styles } from "@/lib/styles";
 
 export const metadata = {
-  title: "About | Abraham Akomolafe",
-  description: "How Abraham Akomolafe thinks about products, growth, and systems.",
+  title: "About | Abraham Akinwumi",
+  description: "How Abraham Akinwumi thinks about products, growth, and systems.",
 };
 
 export default function AboutPage() {

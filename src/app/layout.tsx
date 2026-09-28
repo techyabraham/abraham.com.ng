@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Abraham Akomolafe | Product Developer & Growth Strategist",
+  title: "Abraham Akinwumi | Product Developer & Growth Strategist",
   description:
-    "The personal HQ of Abraham Akomolafe: product builder, marketing and growth consultant, author, and public speaker.",
+    "The personal HQ of Abraham Akinwumi: product builder, marketing and growth consultant, author, and public speaker.",
 };
 
 export default function RootLayout({

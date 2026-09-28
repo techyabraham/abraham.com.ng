@@ -17,11 +17,11 @@ export async function generateMetadata({
   const project = projects.find((item) => item.slug === resolvedParams.slug);
   if (!project) {
     return {
-      title: "Case Study | Abraham Akomolafe",
+      title: "Case Study | Abraham Akinwumi",
     };
   }
   return {
-    title: `${project.name} | Abraham Akomolafe`,
+    title: `${project.name} | Abraham Akinwumi`,
     description: project.summary,
   };
 }

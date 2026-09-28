@@ -140,7 +140,7 @@ export default function Home() {
             <div className="hero-glow-mask" aria-hidden="true" />
             <Image
               src="/images/abraham.jpg"
-              alt="Abraham Akomolafe portrait"
+              alt="Abraham Akinwumi portrait"
               width={540}
               height={620}
               priority
@@ -365,7 +365,7 @@ export default function Home() {
                           </p>
                         </div>
                         <div className="relative text-xs text-slate-100/80">
-                          Abraham Akomolafe
+                          Abraham Akinwumi
                         </div>
                       </>
                     ) : (
@@ -380,7 +380,7 @@ export default function Home() {
                           </p>
                         </div>
                         <div className="relative text-xs text-slate-100/80">
-                          Abraham Akomolafe
+                          Abraham Akinwumi
                         </div>
                       </>
                     )}
@@ -421,7 +421,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
                 <Image
                   src="/images/speaking.jpg"
-                  alt="Abraham Akomolafe speaking on stage"
+                  alt="Abraham Akinwumi speaking on stage"
                   width={900}
                   height={700}
                   className="h-full w-full object-cover"
