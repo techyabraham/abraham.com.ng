@@ -272,6 +272,70 @@ export const consultingCta = {
 
 export const projects: Project[] = [
   {
+    slug: "grantmatch",
+    name: "GrantMatch",
+    summary:
+      "A grant-discovery platform helping Nigerian entrepreneurs, SMEs, and NGOs find funding opportunities that fit their business profiles.",
+    category: "Funding / Grant Discovery",
+    year: "2026",
+    role: "Developer • Product Manager",
+    stack: ["Next.js", "React", "JavaScript", "Vercel"],
+    outcome: [
+      "Presented a clear profile-to-match-to-application journey.",
+      "Made grant eligibility, match scores, awards, and deadlines easy to compare.",
+      "Introduced a Nigeria-first experience for entrepreneurs, SMEs, and NGOs.",
+      "Showcased application tracking, deadline alerts, and business verification.",
+      "Created a private-beta landing page with a waitlist entry point.",
+    ],
+    cover: "/images/projects/grantmatch.png",
+    overview:
+      "GrantMatch connects Africa's builders with capital through a Nigeria-first grant-discovery experience. Its private-beta website introduces profile-based matching and previews funding opportunities with eligibility scores, award amounts, and application deadlines.",
+    problem:
+      "Entrepreneurs and organisations spend hours searching disconnected grant portals and reviewing opportunities they may not qualify for. Eligibility requirements, required documents, and closing dates can be difficult to compare.",
+    solution:
+      "The product presents a three-step journey: complete a business profile, discover grants ranked by fit, and review eligibility and application requirements. The public site explains matching by sector, location, business stage, and registration status, alongside advertised application tracking, deadline reminders, CAC verification, and weekly opportunity digests.",
+    screenshots: ["/images/projects/grantmatch.png"],
+    links: {
+      live: "https://grantmatch-iota.vercel.app/",
+    },
+    cta: {
+      label: "Explore GrantMatch",
+      href: "https://grantmatch-iota.vercel.app/",
+    },
+  },
+  {
+    slug: "090vi",
+    name: "090VI",
+    summary:
+      "An immersive artist website bringing a Lagos Afropop artist's music, visuals, merchandise, and booking enquiries into one destination.",
+    category: "Music / Artist Website",
+    year: "2026",
+    role: "Developer • Designer",
+    stack: ["Next.js", "React", "JavaScript", "Vercel"],
+    outcome: [
+      "Established a distinctive artist identity through cinematic imagery and typography.",
+      "Organised a release catalogue with dedicated music pages and streaming links.",
+      "Brought visuals, fan reactions, and artist storytelling into one experience.",
+      "Showcased the Lyrical Monster merchandise collection.",
+      "Created clear routes to live information, press materials, and booking enquiries.",
+    ],
+    cover: "/images/projects/090vi.png",
+    overview:
+      "090VI's official artist website expresses the theme 'Beyond the obvious' through a cinematic digital experience. It brings together a music catalogue, including the featured ANIKE release, with visuals, an artist story, a gallery, merchandise, press information, and booking pathways.",
+    problem:
+      "An artist's music, videos, social content, and booking information can be scattered across platforms. Fans, promoters, and press need a coherent destination to discover the work and find the right next step.",
+    solution:
+      "The site combines an image-led hero slideshow with dedicated release pages and links to Audiomack, YouTube, Boomplay, Apple Music, and Amazon Music. Visuals, on-demand Instagram reactions, merchandise previews, and clear press and booking navigation extend the artist's identity beyond streaming platforms.",
+    screenshots: ["/images/projects/090vi-homepage.png"],
+    links: {
+      live: "https://090vi.vercel.app/",
+    },
+    cta: {
+      label: "Explore 090VI",
+      href: "https://090vi.vercel.app/",
+    },
+  },
+  {
     slug: "envoysjobs",
     name: "EnvoysJobs",
     summary:

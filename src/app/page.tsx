@@ -139,7 +139,7 @@ export default function Home() {
             <div className="hero-glow" aria-hidden="true" />
             <div className="hero-glow-mask" aria-hidden="true" />
             <Image
-              src="/images/abraham.jpg"
+              src="/images/abraham-akinwumi.jpg"
               alt="Abraham Akinwumi portrait"
               width={540}
               height={620}
